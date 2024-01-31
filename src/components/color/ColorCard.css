@@ -1,0 +1,20 @@
+.color-card {
+    padding: 12px;
+    border-radius: 12px;
+    width: max-content;
+   
+}
+
+.color-card-view {
+    width: 140px;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+}
+
+.color-card-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 4px 0 4px;
+    font-weight: 500;
+    
+}

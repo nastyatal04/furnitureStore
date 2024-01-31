@@ -1,0 +1,11 @@
+.color-add-input {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 0;
+}
+.color-add-input input {
+    width: 280px;
+}
+.color-add button {
+    margin: 8px 0;
+}

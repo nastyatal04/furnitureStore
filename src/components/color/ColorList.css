@@ -1,0 +1,11 @@
+.color-list {
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    flex-wrap: wrap;
+}
+
+.color-list a {
+    text-decoration: none;
+    color: inherit;
+}

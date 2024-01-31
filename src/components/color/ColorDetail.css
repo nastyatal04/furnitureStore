@@ -1,0 +1,27 @@
+.color-detail {
+    padding: 12px;
+    border-radius: 12px;
+    width: max-content;
+}
+
+.color-detail-view {
+    width: 140px;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+}
+
+.color-detail-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 4px 0 4px;
+    font-weight: 500;
+}
+
+.color-detail-hex {
+    display: flex;
+    justify-content: end;
+}
+.button-delete-color {
+    margin: 4px 0;
+    width: 100%;
+}
