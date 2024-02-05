@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 
-const url = "";
+// const url = "";
 
-export const fetchRover = async () => {
-  return fetch(url).then((response) => response.json());
-};
+// export const fetchRover = async () => {
+//   return fetch(url).then((response) => response.json());
+// };

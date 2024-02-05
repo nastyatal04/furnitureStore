@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useGetColors } from "../../api/hooks/hooks-color/useGetColors";
 import { ColorCard } from "./ColorCard";
 import "./ColorList.css";
-import { useGetRover } from "../../api/hooks/hooks -rover";
+//import { useGetRover } from "../../api/hooks/hooks -rover";
 
 export const ColorList = () => {
   const [colors, error, isLoading, fetchData] = useGetColors();
@@ -10,7 +10,7 @@ export const ColorList = () => {
     fetchData();
   }, []);
 
-  const { data: roverPhotosData } = useGetRover();
+  //   const { data: roverPhotosData } = useGetRover();
 
   return (
     <div className="color-list">
