@@ -1,37 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {
-  createBrowserRouter,
-  RouterProvider
-} from 'react-router-dom'
-import { ColorPage } from './pages/ColorPage';
-import { ColorDetail } from './components/color/ColorDetail';
-import { RootLayout } from './layouts/RootLayout';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { ColorPage } from "./pages/ColorPage";
+import { ColorDetail } from "./components/color/ColorDetail";
+import { RootLayout } from "./layouts/RootLayout";
 
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <RootLayout/>,
+    path: "/",
+    element: <RootLayout />,
     children: [
       {
-        path: '/color',
+        path: "/color",
         element: <ColorPage />,
       },
       {
-        path: '/color/:id',
-        element: <ColorDetail />
+        path: "/color/:id",
+        element: <ColorDetail />,
       },
-    ]
-  }
-])
+    ],
+  },
+]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const client = new QueryClient();
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <QueryClientProvider client={client}>
+      <RouterProvider router={router} />
+    </QueryClientProvider>
   </React.StrictMode>
 );
 
